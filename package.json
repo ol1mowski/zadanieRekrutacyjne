@@ -1,0 +1,42 @@
+{
+  "name": "lucchese-product-page",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Lucchese Product Page",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src --ext ts,js,html",
+    "lint:fix": "eslint src --ext ts,js,html --fix",
+    "format": "prettier --write src/**/*.{ts,js,html,css}",
+    "mock-api": "json-server --watch mock/db.json --port 3001",
+    "start": "npm run mock-api & npm run dev"
+  },
+  "keywords": ["ecommerce", "alpine.js", "tailwindcss", "typescript", "vite"],
+  "author": "Frontend Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.5",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint": "^8.50.0",
+    "jest": "^29.7.0",
+    "json-server": "^0.17.4",
+    "prettier": "^3.0.3",
+    "tailwindcss": "^4.1.11",
+    "@tailwindcss/vite": "^4.1.11",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.4.0",
+    "@vitejs/plugin-legacy": "^5.4.3"
+  },
+  "dependencies": {
+    "alpinejs": "^3.13.1",
+    "axios": "^1.5.0",
+    "swiper": "^10.3.1"
+  }
+} 
