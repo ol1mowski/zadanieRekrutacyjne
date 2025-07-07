@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl" class="h-full">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
@@ -19,10 +19,32 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 </head>
 
-<body class="font-sans text-gray-900 bg-white" x-data="productStore()">
-    <h1>!Hello World!</h1>
+<body class="font-sans text-gray-900 bg-white">
+    <main class="flex-1 h-full px-0 py-0 flex gap-0">
 
-    <!-- <script type="module" src="./src/main.ts"></script> -->
+        <section class="w-full md:flex flex-col md:w-[65vw] h-full min-h-0 min-w-0">
+            <div class="relative w-full aspect-[4/5] bg-gray-100">
+                <img src="https://www.lucchese.com/cdn/shop/files/N4831.54-1521_Right_1200x.jpg?v=1741629876"
+                    class="w-full h-full object-cover" alt="Product Image" />
+
+                <div
+                    class="absolute top-4 left-4 bg-white text-black px-2 text-[14px] tracking-wide border border-black">
+                    BEST SELLER
+                </div>
+
+                <button class="absolute top-3 right-3 p-2 transition-colors cursor-pointer">
+                    <svg class="w-7 h-7 text-[#4e4f4e] stroke-[1]" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </button>
+            </div>
+
+        </section>
+
+    </main>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
 
